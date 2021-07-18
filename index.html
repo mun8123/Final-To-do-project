@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/common.css">
+    <link rel="stylesheet" href="./asset/css/login-box.css">
+    <link rel="stylesheet" href="./asset/css/todo.css">
+    <link rel="stylesheet" href="./asset/css/sub-info.css">
+</head>
+<body>
+    <form id="login-form">
+        <h1>
+              Hello<i class="font-roboto">,</i>
+              <i class="transparent">Stranger<i class="font-roboto">.</i></i>
+        </h1>
+            <input id="inputbox" type="text" placeholder="Let me know who you are." onfocus="this.placeholder=''" onblur="this.placeholder='Let me know who you are.'"/>
+            <input id="inputbtn" type="submit" value="Enter">
+    </form>
+
+    <div id="sub-box">
+        <button type="button" id="sign-out-btn">Sign Out</button>
+        <span id="sub-info">
+            <span id="city"></span>
+            <span id="weather"></span>
+            <time id="clock">00:00:00</time>
+        </span>
+    </div>
+
+    <main id="main-form">
+        <section id="main-form-left">
+            <header>
+                <h2 id="greeting">
+                    <i class="transparent">Hello<i class="font-roboto">,</i></i></br>
+                    <span id="saved-username"></span><i class="font-roboto">.</i>
+                </h2>
+                <p id="quotes"></p>
+            </header>
+            <div id="task-progress" class="glassmorphism">
+                <h3 class="sub-title">Task progress</h3>
+                <ul id="progress-bar">
+                    <li>
+                        <span>Today</span>
+                        <span class="text-align progress"></span>
+                        <div class="bar bar-t"></div>
+                        <div class="bar2 bar-t2"></div>
+                    </li>
+                    <li>
+                        <span>Weekly</span>
+                        <span class="text-align progress"></span>
+                        <div class="bar bar-w"></div>
+                        <div class="bar2 bar-w2"></div>
+                    </li>
+                    <li>
+                        <span>Monthly</span>
+                        <span class="text-align progress"></span>
+                        <div class="bar bar-m"></div>
+                        <div class="bar2 bar-m2"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="main-form-right" class="glassmorphism">
+            <div>
+                <h3 class="sub-title">Today</h3>
+                <div class="box-style">
+                    <form class="todo-form">
+                    <input required class="todo-input" type="text">
+                    </form>
+                    <ul class="todo-list"></ul>
+                </div>
+            </div>
+            <div class="small-box">
+                    <h3 class="sub-title">Weekly</h3>
+                    <div class="box-style">
+                        <form class="todo-form">
+                        <input class="todo-input" type="text">
+                        </form>
+                        <ul class="todo-list"></ul>
+                    </div>
+                    <h3 class="sub-title">Monthly</h3>
+                    <div class="box-style">
+                        <form class="todo-form">
+                        <input class="todo-input" type="text">
+                        </form>
+                        <ul class="todo-list"></ul>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="./asset/js/randomBg.js"></script>
+    <script type="text/javascript" src="./asset/js/randomQuote.js"></script>
+    <script type="text/javascript" src="./asset/js/login.js"></script>
+    <script type="text/javascript" src="./asset/js/clock.js"></script>
+    <script type="text/javascript" src="./asset/js/weather.js"></script>
+    <script type="text/javascript" src="./asset/js/todo.js"></script>
+    <script type="text/javascript" src="./asset/js/progressBar.js"></script>
+</body>
+</html>

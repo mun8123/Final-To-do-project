@@ -1,0 +1,32 @@
+@charset 'utf-8';
+@import "common.css";
+
+html, body, div, span,
+h1, h2, h3, p, ol, ul, li,
+form, label, header, section, time
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color: var(--primary-color);
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1;
+}
+
+i {
+	font-style: normal;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+button {
+	padding: 0;
+}
